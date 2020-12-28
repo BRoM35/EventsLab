@@ -1,0 +1,29 @@
+.infoForm {
+  width: 450px;
+}
+
+.infoRow {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.infoTitle {
+  flex: 1;
+  font-weight: 700;
+}
+
+.infoValue {
+  flex: 1;
+  text-align: left;
+}
+
+.selectRegistration {
+  padding: 4px 0;
+}

@@ -1,0 +1,66 @@
+.contentEvents {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonEventsAdd {
+  width: 130px;
+}
+
+.tableEvents {
+  margin-top: 20px;
+}
+
+.buttonOkFormEvents {
+  margin-right: 20px;
+  margin-left: 40px;
+}
+
+.event {
+  display: flex;
+  justify-content: center;
+}
+
+.eventContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-top: 50px;
+  justify-content: center;
+
+}
+
+.eventRow {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+}
+
+.eventRowRead {
+  display: flex;
+  justify-content: center;
+}
+
+.eventTitle {
+  flex: 1;
+  font-weight: 700;
+}
+
+.eventValue {
+  flex: 1;
+  text-align: left;
+}
+
+.eventValue button {
+  margin-left: 15px;
+}
+
+.eventReadButton {
+  width: 150px;
+}

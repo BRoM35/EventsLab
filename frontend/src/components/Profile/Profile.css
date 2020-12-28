@@ -1,0 +1,73 @@
+.profile {
+  width: 100%;
+  height: 100%;
+}
+
+.profileNav {
+  width: 100%;
+  height: 83px;
+  background-color: #D1D2F9;
+  display: flex;
+  align-items: center;
+}
+
+.profileNav-image {
+  margin-left: 41px;
+  height: 57px;
+  width: 62px;
+}
+
+.profileNav-title {
+  margin-left: 55px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  line-height: 1.5715;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  cursor: pointer;
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  color: #fff;
+  background: #1890ff;
+  border-color: #1890ff;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #40a9ff;
+  border-color: #40a9ff;
+}

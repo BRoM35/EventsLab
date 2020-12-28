@@ -1,0 +1,17 @@
+.contentEvents {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonEventsAdd {
+  width: 130px;
+}
+
+.tableEvents {
+  margin-top: 20px;
+}
+
+.buttonOkFormEvents {
+  margin-right: 20px;
+  margin-left: 40px;
+}

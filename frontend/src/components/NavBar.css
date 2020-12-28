@@ -1,0 +1,9 @@
+.logo {
+  height: 64px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  padding-left: 24px;
+  font-weight: 700;
+}
