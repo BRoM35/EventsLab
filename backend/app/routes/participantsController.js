@@ -12,7 +12,14 @@ module.exports = (app, Part) => {
   })
 
   app.post('/participants/', (req, res) => {
-    console.log(req.body)
     createParts(req.body).then(event => res.json(event))
+  })
+
+  app.delete('/participant/:id', (req, res) => {
+    Part.destroy(
+      {where: {
+          id: req.params.id
+        }}
+    ).then(event => res.json(event))
   })
 };

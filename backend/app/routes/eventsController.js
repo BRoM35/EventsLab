@@ -68,7 +68,7 @@ module.exports = (app,  Role, Event, Part) => {
       {where: {
           id: req.params.id
         }}
-    )
+    ).then(event => res.json())
   })
 
   app.put('/events/:id', (req, res) => {

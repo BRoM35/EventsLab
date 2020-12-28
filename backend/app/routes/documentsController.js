@@ -46,7 +46,11 @@ module.exports = (app, Doc, Event) => {
       {where: {
           id: req.params.id
         }}
-    )
+    ).then(doc => {
+      getDocs().then(doc => {
+        res.json(doc)
+      })
+    })
   })
 
   app.get('/document/:id', (req, res) => {
@@ -71,9 +75,11 @@ module.exports = (app, Doc, Event) => {
   })
 
   app.put('/document/sign/:id', (req, res) => {
+    const userId = req.body.userId;
     Doc.update(
       {
-        status: 'signed'
+        status: 'signed',
+        userId
       },
       {where: {
           id: req.params.id
